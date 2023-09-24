@@ -1,0 +1,73 @@
+/* Temel Stil */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Bölüm Stilleri */
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Proje Örnekleri */
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Medya Sorguları */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
