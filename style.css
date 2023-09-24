@@ -123,8 +123,8 @@ a:hover {
 }
 
 .logo-button img {
-  width: 1280px; /* Logo resminin genişliği */
-  height: 720px; /* Logo resminin yüksekliği */
+  width: 128px; /* Logo resminin genişliği */
+  height: 72px; /* Logo resminin yüksekliği */
 }
 
 .logo-button button {
