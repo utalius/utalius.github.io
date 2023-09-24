@@ -1,21 +1,14 @@
-// Sayfa tamamen yüklendiğinde çalışacak kodlar
-window.onload = function () {
-    // Sayfa yüklendikten sonra buraya JavaScript kodlarını ekleyebilirsiniz.
-    
-    // Örnek: Navbar düğmeleri için tıklama olayları
-    var menuItems = document.querySelectorAll('.menu li');
-    for (var i = 0; i < menuItems.length; i++) {
-        menuItems[i].addEventListener('click', function () {
-            // Tıklanan menü öğesine göre sayfayı kaydırabilir veya başka bir işlem yapabilirsiniz.
-        });
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-    
-    // Örnek: Form gönderme işlemi
-    var contactForm = document.getElementById('contact-form');
-    contactForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        // Formun gönderimini işlemek için AJAX veya başka bir yöntem kullanabilirsiniz.
-    });
-    
-    // Daha fazla etkileşim eklemek için burada JavaScript kodları yazabilirsiniz.
-};
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // 3 saniyede bir otomatik geçiş
+}
