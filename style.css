@@ -1,8 +1,9 @@
 /* Genel stil */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
 }
 
 /* Header stil */
@@ -14,7 +15,7 @@ header {
 }
 
 .logo h1 {
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
 }
 
@@ -42,26 +43,35 @@ header {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff7f00;
 }
 
 /* About stil */
 #about {
+    background-color: #fff;
     padding: 40px;
 }
 
 #about h2 {
     font-size: 24px;
+    color: #333;
 }
 
 #about p {
     font-size: 16px;
     line-height: 1.5;
+    color: #666;
 }
 
 /* İletişim stil */
 #contact {
-    background-color: #f4f4f4;
+    background-color: #007BFF;
     padding: 40px;
+    color: #fff;
 }
 
 #contact h2 {
@@ -80,7 +90,13 @@ header {
 
 #contact a {
     text-decoration: none;
-    color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #ff7f00;
 }
 
 /* Footer stil */
@@ -93,8 +109,8 @@ footer {
 
 /* Link stil */
 a {
-    color: #007BFF;
     text-decoration: none;
+    color: #007BFF;
 }
 
 a:hover {
